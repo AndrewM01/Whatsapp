@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Whatsapp Extension",
+    "description": "Whatsapp Extension to auto send messages!",
+    "version": "1.0",
+    "content_scripts": [
+      {
+        "matches": ["https://web.whatsapp.com/","http://*/*", "https://*/*"],
+        "js": ["logic.js"]
+      }
+    ],
+    "action":{
+        "default_title": "Click Me",
+        "default_popup": "main.html"
+    }
+  }
